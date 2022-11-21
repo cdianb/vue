@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>vuejs测试</title>
+</head>
+<body>
+<div id = app>
+    <label>
+        <input type = "text" v-model="num">   <button v-on:click = "add">点我</button>
+    </label>
+    <h2>
+        {{name}}   非常酷！
+        有{{num}}个好处给你带来。
+    </h2>
+</div>
+<script src = "node_modules/vue/dist/vue.js"> </script>
+<script>
+    var app = new Vue({
+        el:"#app",
+        data: {
+            name:"学习",
+            num: 2
+        },
+        methods:{
+            add:function () {
+                alert("他点我了，23333333333333~")
+            }
+        }
+    })
+</script>
+</body>
+</html>
